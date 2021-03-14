@@ -1,4 +1,4 @@
-import formValidation from '../src/client/js/formValidation'
+import formValidation from '../formValidation'
 
 describe("Testing validation functionality", () => {
     test("Testing the formValidation() function", (callback) => {

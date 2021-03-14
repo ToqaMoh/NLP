@@ -3,7 +3,7 @@ const cors = require('cors')
 var bodyParser = require('body-parser')
 const fetchAPI = require('./API.js')
 const dotenv = require('dotenv');
-var https = require('follow-redirects').https;
+const regeneratorRuntime = require("regenerator-runtime");
 
 const PORT = 8081
 
@@ -46,11 +46,14 @@ app.post('/submit', cors(), async (req, res) => {
 
 })
 
+if (process.env.NODE_ENV !== "test") {
+    app.listen(PORT, (error) => {
+        if (error) throw new Error(error)
+        console.log(`Server listening on port ${PORT}!`)
+    })
+}
 
-app.listen(PORT, (error) => {
-    if (error) throw new Error(error)
-    console.log(`Server listening on port ${PORT}!`)
-})
+
 
 
 module.exports = { app };
