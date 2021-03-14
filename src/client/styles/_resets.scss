@@ -31,6 +31,7 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
+	text-align: center;
 }
 body {
 	line-height: 1;
@@ -52,4 +53,26 @@ table {
 }
 ul {
     list-style-type: none;
+}
+
+.container {
+	p {
+		text-align: center;
+		font-weight: 600;
+		font-size: 24px;
+	}
+}
+
+form {
+	textarea {
+		width: 40%;
+	}
+}
+
+.container {
+	section {
+		strong {
+			border: 1px solid;
+		}
+	}
 }

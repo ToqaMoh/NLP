@@ -1,7 +1,7 @@
-import { checkForName } from './js/nameChecker'
-import { handleSubmit } from './js/formHandler'
+import handleSubmit from './js/formHandler'
+import apiData from './js/fetchAPIdata'
+import formValidation from './js/formValidation'
+import './styles/style.scss'
 
-console.log(checkForName);
 
-alert("I EXIST")
-console.log("CHANGE!!");
+export { handleSubmit, apiData, formValidation }

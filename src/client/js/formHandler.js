@@ -1,16 +1,17 @@
 function handleSubmit(event) {
-    event.preventDefault()
+    debugger
 
-    // check what text was put into the form field
-    let formText = document.getElementById('name').value
-    checkForName(formText)
+    event.preventDefault();
 
-    console.log("::: Form Submitted :::")
-    fetch('http://localhost:8080/test')
-    .then(res => res.json())
-    .then(function(res) {
-        document.getElementById('results').innerHTML = res.message
-    })
+    const format = document.querySelector("input[name=format]:checked").value;
+    const input = document.getElementById("input-text").value;
+
+
+    Client.formValidation(format, input);
+
+
 }
 
-export { handleSubmit }
+  
+
+export default handleSubmit
