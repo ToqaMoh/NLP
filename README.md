@@ -26,13 +26,13 @@ The application is completed as requested and can be tested with real data! You 
 - `npm run build-prod to generate a dist folder for prod`
 - `npm run start to run the Express server on port 8081`
 
-## To Run Project (Production)
-- cd into the root folder and run in prod mode
+## To Run Project (Development)
+- cd into the root folder and run in dev mode
 - `npm install`
 - `npm run build-dev to run on port 8080`
 
 ## Testing
-npm run test
+- `npm run test`
 
 Open browser at http://localhost:8081/ (in Production)
 
